@@ -1,9 +1,10 @@
 #include "shell.h"
 
 /**
-  * get_current_directory -  get the current working directory
+  * get_current_directory -  to obtain the active working directory
   *
-  * Return: a pointer to a dynamically allocated string
+  * Return: a pointer to a string  was allocated dynamically
+  * this code was written by KENNY and MBULA
   */
 char *get_current_directory(void)
 {
@@ -21,11 +22,12 @@ char *get_current_directory(void)
 }
 
 /**
-  * execute_cd - execute the cd built-in command
+  * execute_cd - run the built-in cd command
   *
-  * @args: an array of strings representing the command and its arguments
+  * @args: the command and its arguments are represented as an array of strings.
   *
   * Return: returns nothing
+  * this code was written by KENNY and MBULA
   */
 int execute_cd(char **args)
 {
