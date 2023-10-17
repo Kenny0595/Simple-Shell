@@ -49,7 +49,7 @@ void execute_alias(char **args)
 }
 
 /**
- * print_all_aliases - Prints all aliases
+ * print_all_aliases - all alias been printed
  * this code is written by KENNY and MBULA
  */
 
@@ -65,10 +65,10 @@ void print_all_aliases(void)
 
 /**
  * get_alias_value - Identify an alias's value from its name
- * this code is written by KENNY and MBULA
  *
  * @name: The name of the alias
  * Return: the alias's value or NULL if it cannot be found
+ * this code is written by KENNY and MBULA
  */
 
 char *get_alias_value(const char *name)
@@ -109,7 +109,7 @@ void add_alias(const char *name, const char *value)
  * update_alias - Update the value of an existing alias
  *
  * @name: The name of the alias
- * @value: The new value of the alias
+ * @value: alias's new value
  * this code is written by KENNY and MBULA
  */
 
