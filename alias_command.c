@@ -3,7 +3,9 @@
 /**
  * execute_alias - Handles the alias built-in command
  *
- * @args: Array of strings containing the command and its arguments
+ * @args:  the command and its arguments Array of strings containing 
+ * used for abbreviating a system command
+ * this code is written by KENNY and MBULA
  */
 
 static Alias aliases[MAX_ALIASES];
@@ -48,6 +50,7 @@ void execute_alias(char **args)
 
 /**
  * print_all_aliases - Prints all aliases
+ * this code is written by KENNY and MBULA
  */
 
 void print_all_aliases(void)
@@ -61,10 +64,11 @@ void print_all_aliases(void)
 }
 
 /**
- * get_alias_value - Get the value of an alias by its name
+ * get_alias_value - Identify an alias's value from its name
+ * this code is written by KENNY and MBULA
  *
  * @name: The name of the alias
- * Return: The value of the alias or NULL if not found
+ * Return: the alias's value or NULL if it cannot be found
  */
 
 char *get_alias_value(const char *name)
@@ -82,10 +86,11 @@ char *get_alias_value(const char *name)
 }
 
 /**
- * add_alias - Add a new alias to the aliases array
+ * add_alias - Include a new alias in the array of aliases
  *
  * @name: The name of the alias
  * @value: The value of the alias
+ * this code is written by KENNY and MBULA
  */
 
 void add_alias(const char *name, const char *value)
@@ -105,6 +110,7 @@ void add_alias(const char *name, const char *value)
  *
  * @name: The name of the alias
  * @value: The new value of the alias
+ * this code is written by KENNY and MBULA
  */
 
 void update_alias(const char *name, const char *value)
