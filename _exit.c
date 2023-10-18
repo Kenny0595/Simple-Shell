@@ -32,7 +32,7 @@ _puts("\n");
 exit(2);
 }
 
-    frees_tokens(u_tokns);
-    free(line);
-    exit(EXIT_SUCCESS);
+frees_tokens(u_tokns);
+free(line);
+exit(EXIT_SUCCESS);
 }

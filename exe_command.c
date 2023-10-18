@@ -7,7 +7,7 @@
   *
   * Return: nothing
   * this code is written by KENNY and MBULA
- */
+*/
 void execute_command(char **args)
 {
 pid_t pid;
@@ -22,7 +22,7 @@ pid = fork();
 if (pid == 0)
 {
 if (execvp(args[0], args) == -1)
-	{
+{
 perror("execute_command");
 exit(EXIT_FAILURE);
 }

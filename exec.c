@@ -94,7 +94,8 @@ execve(cname, opts, environ);
 default:
 do {
 waitpid(child, &status, WUNTRACED);
-} while (WIFEXITED(status) == 0 && WIFSIGNALED(status) == 0);
+} 
+while (WIFEXITED(status) == 0 && WIFSIGNALED(status) == 0);
 }
 
 return (0);
