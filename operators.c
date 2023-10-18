@@ -1,11 +1,12 @@
 #include "shell.h"
 
 /**
-  * handle_logical_operators - handle multiple commands
+  * handle_logical_operators - take care of several commands
   *
-  * @line: a string representing the user input containing multiple commands
+  * @line: a string that represents user input and includes several commands
   *
   * Return: nothing
+  * the code written by KENNY and MBULA
   */
 
 void handle_logical_operators(char *line)
