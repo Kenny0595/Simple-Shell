@@ -4,6 +4,7 @@
   * main - entry point of the custom shell program
   *
   * Return: nothing
+  * this code is written by KENNY and MBALU
   */
 
 int main(void)
