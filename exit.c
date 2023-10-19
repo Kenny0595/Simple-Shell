@@ -1,11 +1,12 @@
 #include "shell.h"
 
 /**
-  * execute_exit - exit the shell with the specified status
+  * execute_exit - exit the shell with the provided status
   *
-  * @args: an array of strings representing the command and its arguments
+  * @args: a string array describing the command and its arguments
   *
   * Return: returns nothing
+  * this code written by KENNY and MBALU
   */
 
 void execute_exit(char **args)
