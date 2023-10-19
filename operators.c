@@ -3,9 +3,10 @@
 /**
   * handle_logical_operators - handle multiple commands
   *
-  * @line: a string representing the user input containing multiple commands
+  * @line: a string containing many commands that represents user input
   *
   * Return: nothing
+  * this code is written by KENNY and MBULA
   */
 
 void handle_logical_operators(char *line)
