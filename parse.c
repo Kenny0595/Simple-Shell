@@ -1,9 +1,10 @@
 #include "shell.h"
 
 /**
-  * run_shell - Main loop for running the custom shell
+  * run_shell - costum shell for running the main loop
   *
   * Return: returns nothing
+  * this code is written by KENNY and MBULA
   */
 
 void run_shell(void)
@@ -44,9 +45,11 @@ void run_shell(void)
 }
 
 /**
-  * get_input - read user input from standard input
+  * get_input - from standard input read  user input
   *
   * Return: a pointer to a dynamically allocated string
+  * this code is written by KENNY and MBULA
+  *
   */
 
 char *get_input()
