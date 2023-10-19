@@ -1,11 +1,12 @@
 #include "shell.h"
 
 /**
-  * execute_command - execute a command in a child process
+  * execute_command - run a command in a child process
   *
-  * @args: an array of strings representing the command and its arguments
+  * @args: a string array describing the command and its arguments
   *
   * Return: nothing
+  * this code was written by KENNY and MBULA
   */
 
 void execute_command(char **args)
@@ -47,6 +48,7 @@ void execute_command(char **args)
   * execute_env -  Print the current environment
   *
   * Return: nothing
+  * this code was written by KENNY and MBULA
   */
 
 void execute_env(void)
@@ -61,11 +63,12 @@ void execute_env(void)
 }
 
 /**
-  * safe_malloc - allocate memory safely with error handling
+  * safe_malloc - memory allocation with error handling
   *
-  * @size: size of the memory to allocate
+  * @size: size of the memory  to be allocated
   *
-  * Return: a pointer to the allocated memory
+  * Return: memory allocated to a pointer
+  * this code was written by KENNY and MBULA
   */
 
 void *safe_malloc(size_t size)
@@ -81,11 +84,12 @@ void *safe_malloc(size_t size)
 }
 
 /**
-  * safe_strdup - duplicate a string safely with error handling
+  * safe_strdup - Safely replicate a string with error handling
   *
   * @str: The string to be duplicated
   *
   * Return: a pointer to the duplicated string
+  * this code was written by KENNY and MBULA
   */
 
 char *safe_strdup(const char *str)
