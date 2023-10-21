@@ -1,12 +1,14 @@
 #include "shell.h"
 
 /**
- * is_chain - test if current char in buffer is a chain delimeter
+ * is_chain - check to see if the current character in the buffer is a chain delimeter
  * @info: the parameter struct
  * @buf: the char buffer
- * @p: address of current position in buf
+ * @p: current location in buf address
  *
- * Return: 1 if chain delimeter, 0 otherwise
+ * Return:If the chain delimeter is 1, otherwise it is 0.
+ * this code is written by KENNY and MBULA 
+ * wishing myself sucsess
  */
 int is_chain(info_t *info, char *buf, size_t *p)
 {
@@ -36,14 +38,16 @@ int is_chain(info_t *info, char *buf, size_t *p)
 }
 
 /**
- * check_chain - checks we should continue chaining based on last status
+ * check_chain - We should continue chaining based on the last status check.
  * @info: the parameter struct
  * @buf: the char buffer
- * @p: address of current position in buf
- * @i: starting position in buf
- * @len: length of buf
+ * @p: current location in buf address
+ * @i:  starting position of buffer
+ * @len: buffer length
  *
  * Return: Void
+ * this code is written by KENNY and MBULA 
+ * wishing myself sucsess
  */
 void check_chain(info_t *info, char *buf, size_t *p, size_t i, size_t len)
 {
@@ -70,10 +74,12 @@ void check_chain(info_t *info, char *buf, size_t *p, size_t i, size_t len)
 }
 
 /**
- * replace_alias - replaces an aliases in the tokenized string
+ * replace_alias - in the tokenized string, replaces an alias
  * @info: the parameter struct
  *
- * Return: 1 if replaced, 0 otherwise
+ * Return: If replaced, 1; otherwise, 0.
+ * this code is written by KENNY and MBULA 
+ * wishing myself sucsess
  */
 int replace_alias(info_t *info)
 {
@@ -99,10 +105,12 @@ int replace_alias(info_t *info)
 }
 
 /**
- * replace_vars - replaces vars in the tokenized string
+ * replace_vars - vars in the tokenized string are replaced
  * @info: the parameter struct
  *
- * Return: 1 if replaced, 0 otherwise
+ * Return:If replaced, 1; otherwise, 0.
+ * this code is written by KENNY and MBULA 
+ * wishing myself sucsess
  */
 int replace_vars(info_t *info)
 {
@@ -145,6 +153,8 @@ int replace_vars(info_t *info)
  * @new: new string
  *
  * Return: 1 if replaced, 0 otherwise
+ * this code is written by KENNY and MBULA 
+ * wishing myself sucsess
  */
 int replace_string(char **old, char *new)
 {
