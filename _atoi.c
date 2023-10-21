@@ -1,10 +1,12 @@
 #include "shell.h"
 
 /**
- * interactive - returns true if shell is interactive mode
+ * interactive - If the shell is in interactive mode, this function returns true.
  * @info: struct address
  *
- * Return: 1 if interactive mode, 0 otherwise
+ * Return: If in interactive mode, 1; otherwise, 0.
+ * this code is written by KENNY and MBULA
+ * wishing myself sucess
  */
 int interactive(info_t *info)
 {
@@ -12,10 +14,12 @@ int interactive(info_t *info)
 }
 
 /**
- * is_delim - checks if character is a delimeter
+ * is_delim - determines whether the character is a delimeter
  * @c: the char to check
  * @delim: the delimeter string
- * Return: 1 if true, 0 if false
+ * Return: If true, 1 is returned; if false, 0 is returned.
+ * wishing myself sucess
+ * this code is written by KENNY and MBULA
  */
 int is_delim(char c, char *delim)
 {
@@ -26,9 +30,11 @@ int is_delim(char c, char *delim)
 }
 
 /**
- *_isalpha - checks for alphabetic character
- *@c: The character to input
- *Return: 1 if c is alphabetic, 0 otherwise
+ * _isalpha - examines the alphabetic character
+ * @c: The character to input
+ * Return: If c is alphabetical, 1 is returned; otherwise, 0 is returned.
+ * wishing myself sucess
+ * this code is written by KENNY and MBULA
  */
 
 int _isalpha(int c)
@@ -40,9 +46,11 @@ int _isalpha(int c)
 }
 
 /**
- *_atoi - converts a string to an integer
+ *_atoi - transforms a string to an integer
  *@s: the string to be converted
- *Return: 0 if no numbers in string, converted number otherwise
+ *Return: If there are no numbers in the string, return 0; otherwise, return the converted number.
+ *this code is written by KENNY and MBULA
+ *wishing myself sucess
  */
 
 int _atoi(char *s)

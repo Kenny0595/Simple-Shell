@@ -1,10 +1,11 @@
 #include "shell.h"
 
 /**
- *_eputs - prints an input string
- * @str: the string to be printed
+ *_eputs - outputs an input string
+ * @str: the string that will be shown
  *
- * Return: Nothing
+ * Return: Nothingthis code is written by KENNY and MBULA 
+ * wishing myself sucess
  */
 void _eputs(char *str)
 {
@@ -20,11 +21,12 @@ void _eputs(char *str)
 }
 
 /**
- * _eputchar - writes the character c to stderr
- * @c: The character to print
+ * _eputchar - puts the character c to stderr
+ * @c: The printed character
  *
- * Return: On success 1.
- * On error, -1 is returned, and errno is set appropriately.
+ * Return: On success, 1 is returned; on failure, -1 is returned, and errno is set appropriately.
+ * this code is written by KENNY and MBULA 
+ * wishing myself sucess
  */
 int _eputchar(char c)
 {
@@ -42,12 +44,13 @@ int _eputchar(char c)
 }
 
 /**
- * _putfd - writes the character c to given fd
+ * _putfd - writes the character c to the specified fd
  * @c: The character to print
  * @fd: The filedescriptor to write to
  *
- * Return: On success 1.
- * On error, -1 is returned, and errno is set appropriately.
+ * Return: On success, 1 is returned; on failure, -1 is returned, and errno is set appropriately.
+ * this code is written by KENNY and MBULA 
+ * wishing myself sucess
  */
 int _putfd(char c, int fd)
 {
@@ -67,9 +70,11 @@ int _putfd(char c, int fd)
 /**
  *_putsfd - prints an input string
  * @str: the string to be printed
- * @fd: the filedescriptor to write to
+ * @fd: to write to the filedescriptor
  *
- * Return: the number of chars put
+ * Return: the number of characters entered
+ * this code is written by KENNY and MBULA 
+ * wishing myself sucess
  */
 int _putsfd(char *str, int fd)
 {
