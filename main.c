@@ -5,7 +5,9 @@
  * @ac: arg count
  * @av: arg vector
  *
- * Return: 0 on success, 1 on error
+ * Return: 0 for success, 1 for failure
+ * this code is written by KENNY and MBULA 
+ * wishing myself sucsess
  */
 int main(int ac, char **av)
 {

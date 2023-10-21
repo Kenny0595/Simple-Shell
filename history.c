@@ -1,10 +1,12 @@
 #include "shell.h"
 
 /**
- * get_history_file - gets the history file
- * @info: parameter struct
+ * get_history_file - obtains the history file
+ * @info: struct parameter
  *
- * Return: allocated string containg history file
+ * Return:assigned string containing history file
+ * this code is written by KENNY and MBULA 
+ * wishing myself sucsess
  */
 
 char *get_history_file(info_t *info)
@@ -25,10 +27,12 @@ char *get_history_file(info_t *info)
 }
 
 /**
- * write_history - creates a file, or appends to an existing file
+ * write_history : creates a new file or adds to an existing one
  * @info: the parameter struct
  *
- * Return: 1 on success, else -1
+ * Return: If successful, the value is 1, else it is -1.
+ * this code is written by KENNY and MBULA 
+ * wishing myself sucsess
  */
 int write_history(info_t *info)
 {
@@ -57,7 +61,9 @@ int write_history(info_t *info)
  * read_history - reads history from file
  * @info: the parameter struct
  *
- * Return: histcount on success, 0 otherwise
+ * Return: if success, histcount; otherwise, 0
+ * this code is written by KENNY and MBULA 
+ * wishing myself sucsess
  */
 int read_history(info_t *info)
 {
@@ -103,12 +109,14 @@ int read_history(info_t *info)
 }
 
 /**
- * build_history_list - adds entry to a history linked list
- * @info: Structure containing potential arguments. Used to maintain
- * @buf: buffer
+ * build_history_list - adds a new entry to the history linked list
+ * @info: Structure with potential arguments. used to keep things running
+ * @buf: buff
  * @linecount: the history linecount, histcount
  *
  * Return: Always 0
+ * this code is written by KENNY and MBULA 
+ * wishing myself sucsess
  */
 int build_history_list(info_t *info, char *buf, int linecount)
 {
@@ -125,9 +133,11 @@ int build_history_list(info_t *info, char *buf, int linecount)
 
 /**
  * renumber_history - renumbers the history linked list after changes
- * @info: Structure containing potential arguments. Used to maintain
+ * @info: Structure holding potential arguments. used to keep
  *
  * Return: the new histcount
+ * this code is written by KENNY and MBULA 
+ * wishing myself sucsess
  */
 int renumber_history(info_t *info)
 {
