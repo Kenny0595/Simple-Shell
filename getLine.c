@@ -2,11 +2,13 @@
 
 /**
  * input_buf - buffers chained commands
- * @info: parameter struct
- * @buf: address of buffer
+ * @info: parameter structure
+ * @buf:  buf address
  * @len: address of len var
  *
  * Return: bytes read
+ * this code is writtrn by KENNY and MBULA 
+ * wishing myself sucsess
  */
 ssize_t input_buf(info_t *info, char **buf, size_t *len)
 {
@@ -45,14 +47,16 @@ ssize_t input_buf(info_t *info, char **buf, size_t *len)
 }
 
 /**
- * get_input - gets a line minus the newline
+ * get_input - receives a line without the newline
  * @info: parameter struct
  *
  * Return: bytes read
+ * this code is writtrn by KENNY and MBULA 
+ * wishing myself sucsess
  */
 ssize_t get_input(info_t *info)
 {
-	static char *buf; /* the ';' command chain buffer */
+	static char *buf; /* the ';' command chain buff */
 	static size_t i, j, len;
 	ssize_t r = 0;
 	char **buf_p = &(info->arg), *p;
@@ -61,7 +65,7 @@ ssize_t get_input(info_t *info)
 	r = input_buf(info, &buf, &len);
 	if (r == -1) /* EOF */
 		return (-1);
-	if (len)	/* we have commands left in the chain buffer */
+	if (len)	/* we have commands left in the chain buff */
 	{
 		j = i; /* init new iterator to current buf position */
 		p = buf + i; /* get pointer for return */
@@ -75,7 +79,7 @@ ssize_t get_input(info_t *info)
 		}
 
 		i = j + 1; /* increment past nulled ';'' */
-		if (i >= len) /* reached end of buffer? */
+		if (i >= len) /* reached end of buff? */
 		{
 			i = len = 0; /* reset position and length */
 			info->cmd_buf_type = CMD_NORM;
@@ -86,16 +90,18 @@ ssize_t get_input(info_t *info)
 	}
 
 	*buf_p = buf; /* else not a chain, pass back buffer from _getline() */
-	return (r); /* return length of buffer from _getline() */
+	return (r); /* return length of buff  from _getline() */
 }
 
 /**
- * read_buf - reads a buffer
+ * read_buf - reads a buff
  * @info: parameter struct
- * @buf: buffer
+ * @buf: buff
  * @i: size
  *
  * Return: r
+ * this code is writtrn by KENNY and MBULA 
+ * wishing myself sucsess
  */
 ssize_t read_buf(info_t *info, char *buf, size_t *i)
 {
@@ -116,6 +122,8 @@ ssize_t read_buf(info_t *info, char *buf, size_t *i)
  * @length: size of preallocated ptr buffer if not NULL
  *
  * Return: s
+ * this code is writtrn by KENNY and MBULA 
+ * wishing myself sucsess
  */
 int _getline(info_t *info, char **ptr, size_t *length)
 {
@@ -161,6 +169,8 @@ int _getline(info_t *info, char **ptr, size_t *length)
  * @sig_num: the signal number
  *
  * Return: void
+ * this code is writtrn by KENNY and MBULA 
+ * wishing myself sucsess
  */
 void sigintHandler(__attribute__((unused))int sig_num)
 {

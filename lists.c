@@ -1,12 +1,14 @@
 #include "shell.h"
 
 /**
- * add_node - adds a node to the start of the list
- * @head: address of pointer to head node
+ * add_node: adds a node to the list's beginning
+ * @head: address of the reference to the head node
  * @str: str field of node
- * @num: node index used by history
+ * @num: History makes use of a node index.
  *
  * Return: size of list
+ * this code is written by KENNY and MBULA  
+ * wishing myself sucsess
  */
 list_t *add_node(list_t **head, const char *str, int num)
 {
@@ -34,12 +36,14 @@ list_t *add_node(list_t **head, const char *str, int num)
 }
 
 /**
- * add_node_end - adds a node to the end of the list
- * @head: address of pointer to head node
+ * add_node_end - adds a node to the list's beginning
+ * @head:  address of the reference to the head node
  * @str: str field of node
- * @num: node index used by history
+ * @num: History makes use of a node index.
  *
  * Return: size of list
+ * this code is written by KENNY and MBULA  
+ * wishing myself sucsess
  */
 list_t *add_node_end(list_t **head, const char *str, int num)
 {
@@ -69,16 +73,18 @@ list_t *add_node_end(list_t **head, const char *str, int num)
 			node = node->next;
 		node->next = new_node;
 	}
-	else
+	els1 sue
 		*head = new_node;
 	return (new_node);
 }
 
 /**
- * print_list_str - prints only the str element of a list_t linked list
+ * print_list_str - Only the str element of a list_t linked list is printed.
  * @h: pointer to first node
  *
  * Return: size of list
+ * this code is written by KENNY and MBULA  
+ * wishing myself sucsess
  */
 size_t print_list_str(const list_t *h)
 {
@@ -96,10 +102,11 @@ size_t print_list_str(const list_t *h)
 
 /**
  * delete_node_at_index - deletes node at given index
- * @head: address of pointer to first node
+ * @head: address of the initial node's pointer
  * @index: index of node to delete
  *
- * Return: 1 on success, 0 on failure
+ * Return: 
+ * this code is written by KENNY and MBULA  wishing myself sucsess
  */
 int delete_node_at_index(list_t **head, unsigned int index)
 {
